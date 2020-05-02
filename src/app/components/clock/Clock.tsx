@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import "./Clock.css";
 
 export function Clock() {
   const [timeString, setTimeString] = useState("");
@@ -12,7 +13,7 @@ export function Clock() {
     };
   }, []);
 
-  return <div>{timeString}</div>;
+  return <div className="clock">{timeString}</div>;
 }
 
 function getTimeString() {
